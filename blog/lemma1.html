@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>引理1 | VuTeX</title>
+    <meta name="description" content="">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.cc220c41.css" as="style"><link rel="preload" href="/assets/js/app.3749dc94.js" as="script"><link rel="preload" href="/assets/js/5.3d7833b7.js" as="script"><link rel="preload" href="/assets/js/6.1d1d2336.js" as="script"><link rel="preload" href="/assets/js/19.a82f9326.js" as="script"><link rel="preload" href="/assets/js/22.cf0ae84f.js" as="script"><link rel="preload" href="/assets/js/15.5a5ab268.js" as="script"><link rel="preload" href="/assets/js/41.e42e2a36.js" as="script"><link rel="prefetch" href="/assets/js/1.84c36f63.js"><link rel="prefetch" href="/assets/js/10.0bef6aba.js"><link rel="prefetch" href="/assets/js/11.532bf1c8.js"><link rel="prefetch" href="/assets/js/12.b5e8b04f.js"><link rel="prefetch" href="/assets/js/13.adf80c4e.js"><link rel="prefetch" href="/assets/js/14.578f3e07.js"><link rel="prefetch" href="/assets/js/16.03dd81cb.js"><link rel="prefetch" href="/assets/js/17.5664471a.js"><link rel="prefetch" href="/assets/js/18.d32a5eed.js"><link rel="prefetch" href="/assets/js/20.2ad493ee.js"><link rel="prefetch" href="/assets/js/21.fd255091.js"><link rel="prefetch" href="/assets/js/23.04091602.js"><link rel="prefetch" href="/assets/js/24.f8d34802.js"><link rel="prefetch" href="/assets/js/25.a1455c15.js"><link rel="prefetch" href="/assets/js/26.b3d48217.js"><link rel="prefetch" href="/assets/js/27.bc25e081.js"><link rel="prefetch" href="/assets/js/28.679c3008.js"><link rel="prefetch" href="/assets/js/29.92035b72.js"><link rel="prefetch" href="/assets/js/3.dbbbc918.js"><link rel="prefetch" href="/assets/js/30.ee5f48ed.js"><link rel="prefetch" href="/assets/js/31.2d1bc88d.js"><link rel="prefetch" href="/assets/js/32.366db51a.js"><link rel="prefetch" href="/assets/js/33.3b4a6a10.js"><link rel="prefetch" href="/assets/js/34.e06b6a58.js"><link rel="prefetch" href="/assets/js/35.37d77c12.js"><link rel="prefetch" href="/assets/js/36.cf723737.js"><link rel="prefetch" href="/assets/js/37.87938c48.js"><link rel="prefetch" href="/assets/js/38.80c34e5a.js"><link rel="prefetch" href="/assets/js/39.8516265e.js"><link rel="prefetch" href="/assets/js/4.725acb78.js"><link rel="prefetch" href="/assets/js/40.0d07b784.js"><link rel="prefetch" href="/assets/js/42.42072995.js"><link rel="prefetch" href="/assets/js/43.a5dae588.js"><link rel="prefetch" href="/assets/js/44.c7069e8d.js"><link rel="prefetch" href="/assets/js/7.c227adf6.js"><link rel="prefetch" href="/assets/js/8.2b37537d.js"><link rel="prefetch" href="/assets/js/9.26e2a1d7.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.cc220c41.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme"><header class="navbar"><div class="nav-header"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="https://vuejs.org/images/logo.png" class="logo"> <span class="site-name can-hide">
+        VuTeX
+      </span></a> <nav class="nav-links can-hide"><ul class="nav-ul"><li class="nav-item"><a href="/" class="nav-link">Home</a></li><li class="nav-item"><a href="/tag/" class="nav-link">Tags</a></li><li class="nav-item"><a href="https://github.com/GalAster" target="_blank" rel="noopener noreferrer" class="nav-link">Github</a></li></ul></nav> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div></div></div></header> <div class="sidebar-mask"></div> <!----> <div class="layout-container"><div class="main"><div class="layout-inner"><div id="mathjax" style="display:none;"><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    showProcessingMessages: false,
+    messageStyle: &quot;none&quot;,
+    extensions: [&quot;toMathML.js&quot;,&quot;tex2jax.js&quot;],
+    TeX: {
+      extensions: [&quot;AMSmath.js&quot;,&quot;AMSsymbols.js&quot;,&quot;noErrors.js&quot;,&quot;noUndefined.js&quot;]
+    },
+    tex2jax: {
+      inlineMath: [[&quot;$&quot;, &quot;$&quot;], [&quot;\\(&quot;, &quot;\\)&quot;]],
+      displayMath: [[&quot;$$&quot;, &quot;$$&quot;], [&quot;\\[&quot;, &quot;\\]&quot;]],
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+      processEscapes: true,
+      //preview: &quot;none&quot;
+    },
+    jax: [&quot;input/TeX&quot;, &quot;output/HTML-CSS&quot;],
+    &quot;HTML-CSS&quot;: {
+      availableFonts: [&quot;STIX&quot;, &quot;TeX&quot;]
+      //showMathMenu: false
+    }
+});
+MathJax.Hub.Queue([&quot;Typeset&quot;,MathJax.Hub]);
+</script> <script type="application/javascript" src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js"></script> <div style="display:none">
+  $$
+    
+    \def\|#1{\left|#1\right|}
+    \def\(#1{\left(#1\right)}
+    \def\[#1{\left[#1\right]}
+    \def\&lt;#1{\left&lt;#1\right&gt;}
+    \def\{#1{\left\{#1\right\}}
+    
+    \def\dd{\,\mathrm{d}}
+    \def\e{\mathrm{e}}
+    
+    \def\CC{\mathbf{C}}
+    \def\RR{\mathbf{R}}
+    
+  $$
+</div></div> <div class="card"><div class="content-header"><h1 class="page-title">
+        引理1
+      </h1> <span class="page-timestamp"></span></div> <div class="content default"><blockquote><p><strong>引理1</strong>
+假设 <span class="math-inline">$y \geq 0$</span> ,而 <span class="math-inline">$[\log x]$</span> 表示 <span class="math-inline">$\log x$</span> 的整数部分, 设:</p> <span class="math-block">$$\Phi (y) = \frac {1} {2 \pi i} \int_{2 - i \infty}^{2 + i \infty} \frac {y^{\omega} \dd \omega} {\omega \left(1 + \frac {\omega} {(\log x)^{1.1}}\right)^{[ \log x ] + 1}},x &gt; 1
+$$</span> <p>显见，当 <span class="math-inline">$0 \leq y \leq 1$</span> 时，有 <span class="math-inline">$\Phi(y) = 0$</span>. 对于所有 <span class="math-inline">$y \geq 0$</span>, 则 <span class="math-inline">$\Phi(y)$</span> 是一个非减函数.
+当 <span class="math-inline">$\log x\geq 10^4$</span> 及 <span class="math-inline">$y\geq e^{2{(\log x)}^{-0.1}}$</span> 时，则有:</p> <span class="math-block">$$1 - x^{- 0.1} \leq \Phi (y) \leq 1
+$$</span></blockquote> <p><strong>证:</strong></p> <p>我们先来证明:</p> <span class="math-block">$$\frac {\partial^{r}} {\partial \omega^{r}} \left(\frac {y^{\omega}} {\omega}\right) 
+= \left(\frac {y^{\omega}} {\omega}\right)  \left\{(\log y)^{r} + \sum_{i = 1}^{r} \frac {(- 1)^{i} r \cdots (r - i + 1) (\log y)^{r - i}} {\omega^{i}} \right\}$$</span> <p>成立, 显见 (1) 式当 <span class="math-inline">$r=1$</span> 和 <span class="math-inline">$r=2$</span> 时都成立.</p> <p>现假定 (1) 式对于  <span class="math-inline">$r = 2 , \cdots , S$</span> 时都成立, 而证明对于 <span class="math-inline">$S+1$</span> 也成立.</p> <p>由于</p> <p><img src="https://i.loli.net/2018/12/26/5c233ef1a2965.png" alt="TIM截图20181226164132.png"></p> <span class="math-block">$$\begin{aligned}
+\frac {\partial^{s + 1}} {\partial \omega^{s + 1}} \left(\frac {y^{\omega}} {\omega}\right) 
+&amp;= \frac{\partial}{\partial \omega} \left\{y^{\omega} \left(\frac {(\log y)^{s}} {\omega} + \sum_{i = 1}^{s} \frac {(- 1)^{i}\cdot s \cdots (s - i + 1) (\log y)^{s - i}} {\omega^{i + 1}}\right)\right\}\\
+&amp;= y^{\omega} \left\{\frac {(\log y)^{s + 1}} {\omega} + \sum_{i = 1}^{s} \frac {(- 1)^{i}\cdot s \cdots (s - i + 1) (\log y)^{s + 1 - i}} {\omega^{i + 1}} - \frac {(\log y)^{s}} {\omega^{2}}+ \sum_{i = 1}^{s} \frac {(- 1)^{i + 1} s \cdot \cdot (s - i + 1) (i + 1) (\log y)^{s - i}} {\omega^{t + 2}} \right\}\\
+&amp;=\({\frac {y^{\omega}} {\omega}} (\log y)^{s + 1}- \frac {(s + 1) (\log y)^{s}} {\omega} + \frac {(- 1)^{r_{1}} (S + 1) !} {\omega^{s + 1}}
+\end{aligned}$$</span> <p>故 (1) 式得证.</p> <p>又当  <span class="math-inline">$y \geq 1$</span> 时, 我们有</p> <span class="math-block">$$\begin{aligned}
+\Phi(y)
+&amp;=1+\left\{\frac {(\log x)^{1.1 + 1.1 [ \log x} ]} {[ \log x ] !} \right\}\left\{\frac {\partial^{[ \log x ]}} {\partial \omega^{[ \log x)}} \left(\frac {y^{\omega}} {\omega}\right) \right\}_{\omega=-(\log x)^{1.1}}\\
+&amp;= 1 - e^{- (\log x)^{1.1} \cdot (\log y)} \sum_{\nu = 0}^{[\log x]} \frac {(\log x)^{1.1} (\log y)^{\nu}} {\nu !}\\
+&amp;= \left\{\frac {1} {[ \log x ] !} \right\} \int_{0}^{(\log x) ! \cdot (\log y)} e^{- \lambda} \lambda^{[ \log x ]} \mathrm{d} \lambda
+\end{aligned}$$</span> <p>因为  <span class="math-inline">$0\leq y \leq1$</span> 时,  <span class="math-inline">$\Phi(y)=0$</span>. 故由上式得到: 当  <span class="math-inline">$y\geq0$</span>  时, 则  <span class="math-inline">$\Phi(y)$</span> 是一个非减函数.</p> <p>又当  <span class="math-inline">$y \geq e^{2 (\log x) - 1.0}$</span>  时, 有</p> <span class="math-block">$$\begin{aligned}
+0 &lt; 1 - \Phi (y)
+&amp;=\left\{\frac {1} {[ \log x ] !} \right\} \int_{(\log x)^{1.1} (\log y)}^{\infty} e^{- \lambda} \lambda^{[\log x ]} \mathrm{d} \lambda\\
+&amp;\leq \left\{\frac {1} {[ \log x ] !} \right\} \int_{2 [ \log x ]}^{\infty} e^{- \lambda} \lambda^{[ \log x ]} \mathrm{d} \lambda \\
+&amp;= \left\{\frac {([ \log x ])^{1 + [ \log x)}} {[ \log x ] !} \right\}\cdot\int_{2}^{\infty} e^{- \lambda [\log x]} \lambda^{[ \log x ]} \mathrm{d} \lambda\\
+&amp;=\left\{\frac {e^{-[ \log x ]} ([ \log x ])^{1 +[\log x]}} {[ \log x ] !} \right\}\cdot \int_{1}^{\infty} e^{- \lambda [\log x]} (1 + \lambda)^{[\log x]} \mathrm{d} \lambda \\
+&amp;\leq x^{- 0.1}
+\end{aligned}$$</span> <p>其中用到 <span class="math-inline">$\log x\geq10^4$</span> 及当 <span class="math-inline">$\lambda\geq1$</span> 时, 有 <span class="math-inline">$e^{\log (1 + \lambda)} \leq e^{\lambda \log 2}$</span>.</p></div> <div class="content page-nav"><p class="inner"><span class="prev">
+          ← <a href="/blog/badge.html" class="prev">
+            Badge
+          </a></span> <span class="next"><a href="/blog/video.html">
+            Video Demo
+          </a> →
+        </span></p></div></div> <!----></div></div></div></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.3749dc94.js" defer></script><script src="/assets/js/5.3d7833b7.js" defer></script><script src="/assets/js/6.1d1d2336.js" defer></script><script src="/assets/js/19.a82f9326.js" defer></script><script src="/assets/js/22.cf0ae84f.js" defer></script><script src="/assets/js/15.5a5ab268.js" defer></script><script src="/assets/js/41.e42e2a36.js" defer></script>
+  </body>
+</html>

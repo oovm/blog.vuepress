@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>引理9 | VuTeX</title>
+    <meta name="description" content="">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.cc220c41.css" as="style"><link rel="preload" href="/assets/js/app.3749dc94.js" as="script"><link rel="preload" href="/assets/js/5.3d7833b7.js" as="script"><link rel="preload" href="/assets/js/6.1d1d2336.js" as="script"><link rel="preload" href="/assets/js/19.a82f9326.js" as="script"><link rel="preload" href="/assets/js/22.cf0ae84f.js" as="script"><link rel="preload" href="/assets/js/15.5a5ab268.js" as="script"><link rel="preload" href="/assets/js/42.42072995.js" as="script"><link rel="prefetch" href="/assets/js/1.84c36f63.js"><link rel="prefetch" href="/assets/js/10.0bef6aba.js"><link rel="prefetch" href="/assets/js/11.532bf1c8.js"><link rel="prefetch" href="/assets/js/12.b5e8b04f.js"><link rel="prefetch" href="/assets/js/13.adf80c4e.js"><link rel="prefetch" href="/assets/js/14.578f3e07.js"><link rel="prefetch" href="/assets/js/16.03dd81cb.js"><link rel="prefetch" href="/assets/js/17.5664471a.js"><link rel="prefetch" href="/assets/js/18.d32a5eed.js"><link rel="prefetch" href="/assets/js/20.2ad493ee.js"><link rel="prefetch" href="/assets/js/21.fd255091.js"><link rel="prefetch" href="/assets/js/23.04091602.js"><link rel="prefetch" href="/assets/js/24.f8d34802.js"><link rel="prefetch" href="/assets/js/25.a1455c15.js"><link rel="prefetch" href="/assets/js/26.b3d48217.js"><link rel="prefetch" href="/assets/js/27.bc25e081.js"><link rel="prefetch" href="/assets/js/28.679c3008.js"><link rel="prefetch" href="/assets/js/29.92035b72.js"><link rel="prefetch" href="/assets/js/3.dbbbc918.js"><link rel="prefetch" href="/assets/js/30.ee5f48ed.js"><link rel="prefetch" href="/assets/js/31.2d1bc88d.js"><link rel="prefetch" href="/assets/js/32.366db51a.js"><link rel="prefetch" href="/assets/js/33.3b4a6a10.js"><link rel="prefetch" href="/assets/js/34.e06b6a58.js"><link rel="prefetch" href="/assets/js/35.37d77c12.js"><link rel="prefetch" href="/assets/js/36.cf723737.js"><link rel="prefetch" href="/assets/js/37.87938c48.js"><link rel="prefetch" href="/assets/js/38.80c34e5a.js"><link rel="prefetch" href="/assets/js/39.8516265e.js"><link rel="prefetch" href="/assets/js/4.725acb78.js"><link rel="prefetch" href="/assets/js/40.0d07b784.js"><link rel="prefetch" href="/assets/js/41.e42e2a36.js"><link rel="prefetch" href="/assets/js/43.a5dae588.js"><link rel="prefetch" href="/assets/js/44.c7069e8d.js"><link rel="prefetch" href="/assets/js/7.c227adf6.js"><link rel="prefetch" href="/assets/js/8.2b37537d.js"><link rel="prefetch" href="/assets/js/9.26e2a1d7.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.cc220c41.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme"><header class="navbar"><div class="nav-header"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="https://vuejs.org/images/logo.png" class="logo"> <span class="site-name can-hide">
+        VuTeX
+      </span></a> <nav class="nav-links can-hide"><ul class="nav-ul"><li class="nav-item"><a href="/" class="nav-link">Home</a></li><li class="nav-item"><a href="/tag/" class="nav-link">Tags</a></li><li class="nav-item"><a href="https://github.com/GalAster" target="_blank" rel="noopener noreferrer" class="nav-link">Github</a></li></ul></nav> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div></div></div></header> <div class="sidebar-mask"></div> <!----> <div class="layout-container"><div class="main"><div class="layout-inner"><div id="mathjax" style="display:none;"><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    showProcessingMessages: false,
+    messageStyle: &quot;none&quot;,
+    extensions: [&quot;toMathML.js&quot;,&quot;tex2jax.js&quot;],
+    TeX: {
+      extensions: [&quot;AMSmath.js&quot;,&quot;AMSsymbols.js&quot;,&quot;noErrors.js&quot;,&quot;noUndefined.js&quot;]
+    },
+    tex2jax: {
+      inlineMath: [[&quot;$&quot;, &quot;$&quot;], [&quot;\\(&quot;, &quot;\\)&quot;]],
+      displayMath: [[&quot;$$&quot;, &quot;$$&quot;], [&quot;\\[&quot;, &quot;\\]&quot;]],
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+      processEscapes: true,
+      //preview: &quot;none&quot;
+    },
+    jax: [&quot;input/TeX&quot;, &quot;output/HTML-CSS&quot;],
+    &quot;HTML-CSS&quot;: {
+      availableFonts: [&quot;STIX&quot;, &quot;TeX&quot;]
+      //showMathMenu: false
+    }
+});
+MathJax.Hub.Queue([&quot;Typeset&quot;,MathJax.Hub]);
+</script> <script type="application/javascript" src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js"></script> <div style="display:none">
+  $$
+    
+    \def\|#1{\left|#1\right|}
+    \def\(#1{\left(#1\right)}
+    \def\[#1{\left[#1\right]}
+    \def\&lt;#1{\left&lt;#1\right&gt;}
+    \def\{#1{\left\{#1\right\}}
+    
+    \def\dd{\,\mathrm{d}}
+    \def\e{\mathrm{e}}
+    
+    \def\CC{\mathbf{C}}
+    \def\RR{\mathbf{R}}
+    
+  $$
+</div></div> <div class="card"><div class="content-header"><h1 class="page-title">
+        引理9
+      </h1> <span class="page-timestamp"></span></div> <div class="content default"><blockquote><p><strong>引理9:</strong>
+设 <span class="math-inline">$x$</span> 是大偶数, 则有:</p> <span class="math-block">$$P_{x} (x , x^{\frac{1}{10}}) - \frac{1}{2} \sum_{x^\frac{1}{10} &lt; r \leq x^{\frac{1}{3}}} P_{x} (x , p , x^{\frac {1} {10}}) \geq \frac {2.6408 x C_{x}} {(\log x)^{2}}
+$$</span> <p>其中 <span class="math-inline">$\displaystyle{C_{x} = \prod_ \frac {p - 1} {p - 2} \prod_{p &gt; 2} \left(1 - \frac {1} {(p - 1)^{2}}\right)}.$</span></p></blockquote> <p>[&gt;_&lt;]:</p> <span class="math-block">$$\prod_{\begin{aligned} p &amp;\mid x \\ p &amp;&gt; 2\end{aligned}}
+$$</span> <p>取 <span class="math-inline">$\displaystyle{r(p) = \frac {p} {p - 1} , K = x , Z = x^{\frac {1} {10}}}$</span>, 我们有</p> <span class="math-block">$$\begin{aligned}
+\Gamma_{x} (x^{\frac {1} {10}})
+&amp;=\frac {x} {\varphi (x)} \prod_{p\nmid x} \frac {1 - \frac {1} {p - 1}} {1 - \frac {1} {p}} \frac {e^{- r}} {\log x^{\frac {1} {10}}} \left\{1 + O\left(\frac {1} {\log x}\right) \right\}\\
+&amp;= \frac {x} {\varphi (x)}\prod_\frac {(p - 1)^{2}} {p (p - 2)}\prod_{p &gt; 2} \left(1 - \frac {1} {(p - 1)^{2}}\right) \frac {e^{- r}} {\log x^{\frac {1} {10}}} \left\{1 + O \left(\frac {1}{\log x}\right) \right\}\\
+&amp;= \frac {20 e^{- \gamma} C_{x}} {\log x}\left\{1 + O \left(\frac {1}{\log x}\right) \right\}
+\end{aligned}$$</span> <p>其中 <span class="math-inline">$\gamma$</span> 是 Euler 常数.</p> <p>又当 <span class="math-inline">$0\le u\leq2$</span> 时, 令 <span class="math-inline">$F(u)=\dfrac{2e^r}{u},f(u)=0$</span>, 而当 <span class="math-inline">$u\geq2$</span> 时, 令 <span class="math-inline">$(uF(u))'=f(u-1),(uf(u))'=F(u-1)$</span>.</p> <p>当 <span class="math-inline">$2\le u\leq 3$</span> 时, 有:</p> <span class="math-block">$$uF(u)=2F(2),F(u)=\frac{2e^r}{u}
+$$</span> <p>又当 <span class="math-inline">$2\leq u\leq 4$</span> 时, 则有</p> <span class="math-block">$$u f (u) = \int_{2}^{u} F (t - 1) d t = 2 e^{r} \log (u - 1) , \quad f (u) = \frac {2 e^{r} \log (u - 1)} {u}
+$$</span> <p>当 <span class="math-inline">$3\leq u\leq 4$</span> 时, 我们有:</p> <span class="math-block">$$u F (u) = 2 e^r + \int_{3}^{u} f (t - 1) d t = 2 e^r \left(1 + \int_{2}^{u - 1} \frac {\log (t - 1)} {t} d t\right)
+$$</span> <p>又有:</p> <span class="math-block">$$5 f (5) = 2 e^r \log 3 + \int_{4}^{5} F (u - 1) d u = 2 e^r \left(\log 4 + \int_{3}^{4} \frac {d u} {u} \int_{2}^{n - 1} \frac {\log (t - 1)} {t} d t\right)
+$$</span> <p>取 <span class="math-inline">$\xi^{2} = x^{\frac {1} {2} - \epsilon} , q = 1 ,  z = x^{\frac {1}{10}}$</span>, 则由上式可知, 当 <span class="math-inline">$x$</span> 很大时, 有:</p> <span class="math-block">$$\begin{aligned}
+P_{x} (x , x^{\frac {1} {10}})
+&amp;\geq \frac {2 (1 - \sqrt {e}) e^{- r} x C_{x} f (5)} {(\log x) (\log x^{\frac {1} {10}})} \\
+&amp;\geq \left\{\frac {8 (1 - \sqrt {e}) x C_{x}} {(\log x)^{2}} \right\}\cdot \left\{\log 4 + \int_{3}^{4} \frac {d u} {u} \int_{2}^{n - 1} \frac {\log (t - 1)} {t} \mathrm{d} t \right\}
+\end{aligned}$$</span> <p>再取 <span class="math-inline">$\xi^{2} = \dfrac{x^{\frac {1} {2} - \epsilon}}{p} , q = p ,  z = x^{\frac {1}{10}}$</span>, 我们有</p> <span class="math-block">$$\begin{aligned}
+\sum_{x^\frac{1}{10} &lt; r \leq x^{\frac{1}{3}}} P_{x} (x , p , x^{\frac {1} {10}})
+&amp;\leq\left\{\frac {20 (1 + \sqrt {e}) e^{- r} x C_{r}} {(\log x)^{2}} \right\}
+\left\{\sum_{x^\frac{1}{10} &lt; r \leq x^{\frac{1}{5}}}\left(\frac {2 c^{r}} {p}\right)\cdot \left(1 + \int_{2}^{4 - \frac {100 \log p} {\log x}} \frac {\log (t - 1)} {t} \mathrm{d}t\right)\left(\frac {\log x^{\frac {1} {10}}} {\log \frac {x^{\frac {1} {2}}} {p}}\right)+\sum_{x^\frac{1}{5} &lt; r \leq x^{\frac{1}{3}}}\frac {2 e^{r} \log x^{\frac {1} {10}}} {p \log \frac {x^{\frac {1} {2}}} {p}}\right\}\\
+&amp;\leq\left\{\frac {(4 + 5 \sqrt {e}) x C_{x}} {\log x} \right\}
+\left\{\int_{x^\frac{1}{10}}^{x^\frac{1}{5}}\frac {\mathrm{d} S} {S (\log S) (\log \frac {x^{\frac {1} {2}}} {S})}\int_{2}^{4 - \frac {10 \log s} {\log x}} \frac {\log (t - 1)} {t} \mathrm{d} t+ \int_{x^{\frac {1} {2}}}^{x^{\frac {1} {3}}} \cdot \frac {d S} {S (\log S) (\log \frac {x^{\frac {1} {2}}} {S})}\right\}\\
+&amp;=\left\{\frac {(4 + 5 \sqrt {e}) x C_{x}} {\log x} \right\}
+\left\{\int_{\frac {1} {10}}^{\frac {1} {5}} \frac {d \alpha} {u (\frac {1} {2} - \alpha)} \int_{2}^{t - 10 a} \frac {\log (t - 1)} {t} \mathrm{d} t+\int_{\frac {1} {10}}^{\frac {2} {3}} \frac {d \alpha} {\alpha (\frac {1} {2} - \alpha)}\right\}\\
+&amp;=\left\{\frac {(8 + 10 \sqrt {e}) x C_{x}} {\log x} \right\}
+\left\{\log 8 + \int_{\frac {1} {10}}^{\frac {1} {5}} \frac {d \alpha} {2 \pi (\frac {1} {2} - \alpha)} \int_{2}^{4 - 10 a} \frac {\log (t - 1)} {t} d t \right\}
+\end{aligned}$$</span> <p>显见, 当 <span class="math-inline">$1\leq x \leq 2$</span>时, 有 <span class="math-inline">$\log x \leq \dfrac {x - 1} {2} + \dfrac {x - 1} {1 + x}$</span>, 故有:</p> <span class="math-block">$$\begin{aligned}
+&amp;\int_{3}^{4} \frac {d u} {u} \int_{2}^{u - 1} \frac {\log (t - 1)} {t} d t - \frac {1} {4} \int_{\frac {1} {10}}^{\frac {1} {3}} \frac {d \alpha} {\alpha (\frac {1} {2} - \alpha)} \int_{2}^{4 - 1) a} \frac {\log (t - 1)} {t} d t\\
+=&amp; \int_{3}^{4} \left(\frac {1} {u} - \frac {2.5} {u (5 - u)}\right) d u \int_{2}^{u - 1} \frac {\log (t - 1)} {t} d t \\
+\geq&amp; \int_{3}^{4} \frac {2.5 - u} {u (5 - u)} \mathrm{d}t \int_{2}^{u - 1} (\frac {t - 2} {2} + \frac {t - 2} {t}) \frac {d t} {t} \\
+=&amp; \int_{3}^{4} \left\{\frac {2.5 - u} {2 u (5 - u)} \right\} (u - 3 + \frac {4} {u - 1} - 2) d u\\
+=&amp; \int_{3}^{4} \left(\frac {1} {2} - \frac {2.25} {u} - \frac {1} {4 (5 - u)} + \frac {0.75} {u - 1}\right) d u \\
+=&amp; \frac {1} {2} - 2.25 \log \frac {4} {3} - \frac {\log 2} {4}+ 0.75 \log \frac {3} {2} \\
+=&amp; \frac {1} {2} + 0.75 \log \frac {9} {8} - 1.5 \log \frac {4} {3} - \frac {\log 2} {4}\\
+\geq&amp; 0.588335 - 0.6048075 \\
+=&amp; - 0.0164725
+\end{aligned}$$</span> <p>综上所述:</p> <span class="math-block">$$\begin{aligned}
+&amp;P_{x} (x , x^{\frac {1} {10}}) - \frac {1} {2}\sum_{x^\frac{1}{10} &lt; r \leq x^{\frac{1}{3}}} P_{x} (x , p , x^{\frac {1} {10}}) \\
+\geq&amp; \left(\frac {(8 - 50 \sqrt {e}) x C_{x}} {(\log x)^{2}}\right)\cdot (\log 4 - \frac {\log 8} {2} - 0.0164725) \\
+\geq&amp; \frac {(8 x C_{x}) (0.3301)} {(\log x)^{2}}
+\end{aligned}$$</span> <p>于是原命题得证</p> <blockquote><p><strong>注:</strong></p> <div class="language- extra-class"><pre class="language-text"><code>i1=Integrate[Log[t-1]/t,{t,2,4-10a},Assumptions-&gt;0.2&gt;a&gt;0.1]
+i2=Log[8]+NIntegrate[i1/(Pi-2Pi a),{a,1/10,1/5}]
+i3=i2(8+10Sqrt[E])
+</code></pre></div></blockquote></div> <div class="content page-nav"><p class="inner"><span class="prev">
+          ← <a href="/blog/video.html" class="prev">
+            Video Demo
+          </a></span> <!----></p></div></div> <!----></div></div></div></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.3749dc94.js" defer></script><script src="/assets/js/5.3d7833b7.js" defer></script><script src="/assets/js/6.1d1d2336.js" defer></script><script src="/assets/js/19.a82f9326.js" defer></script><script src="/assets/js/22.cf0ae84f.js" defer></script><script src="/assets/js/15.5a5ab268.js" defer></script><script src="/assets/js/42.42072995.js" defer></script>
+  </body>
+</html>
